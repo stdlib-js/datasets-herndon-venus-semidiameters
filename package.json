@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/datasets-herndon-venus-semidiameters",
-  "version": "0.0.0",
+  "version": "0.0.9",
   "description": "Fifteen observations of the vertical semidiameter of Venus, made by Lieutenant Herndon, with the meridian circle at Washington, in the year 1846.",
   "license": "Apache-2.0",
   "author": {
