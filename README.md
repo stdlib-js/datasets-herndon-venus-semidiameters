@@ -43,19 +43,31 @@ Herndon's observations are a classic dataset commonly used in examples demonstra
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/datasets-herndon-venus-semidiameters
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import data from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-herndon-venus-semidiameters/tags). For example,
-
-```javascript
-import data from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@v0.1.0-deno/mod.js';
+var data = require( '@stdlib/datasets-herndon-venus-semidiameters' );
 ```
 
 #### data()
@@ -78,8 +90,8 @@ var d = data();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import incrgrubbs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-grubbs@deno/mod.js';
-import data from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@deno/mod.js';
+var incrgrubbs = require( '@stdlib/stats-incr-grubbs' );
+var data = require( '@stdlib/datasets-herndon-venus-semidiameters' );
 
 var opts;
 var acc;
@@ -108,7 +120,83 @@ console.log( acc().print() );
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/datasets-herndon-venus-semidiameters-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: herndon-venus-semidiameters [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+### Notes
+
+-   Data is written to `stdout` as newline-delimited data.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ herndon-venus-semidiameters
+-0.30
+-0.44
+1.01
+0.48
+-0.24
+0.06
+0.63
+-0.13
+-1.40
+-0.22
+-0.05
+0.20
+0.18
+0.39
+0.10
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 * * *
 
@@ -150,7 +238,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -175,8 +263,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/datasets-herndon-venus-semidiameters.svg
 [npm-url]: https://npmjs.org/package/@stdlib/datasets-herndon-venus-semidiameters
 
-[test-image]: https://github.com/stdlib-js/datasets-herndon-venus-semidiameters/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/datasets-herndon-venus-semidiameters/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/datasets-herndon-venus-semidiameters/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/datasets-herndon-venus-semidiameters/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/datasets-herndon-venus-semidiameters/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/datasets-herndon-venus-semidiameters?branch=main
