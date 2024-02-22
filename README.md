@@ -52,7 +52,7 @@ Herndon's observations are a classic dataset commonly used in examples demonstra
 To use in Observable,
 
 ```javascript
-data = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@umd/browser.js' )
+data = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@v0.2.1-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -64,7 +64,7 @@ var data = require( 'path/to/vendor/umd/datasets-herndon-venus-semidiameters/ind
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@v0.2.1-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -101,7 +101,7 @@ var d = data();
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-grubbs@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@v0.2.1-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
