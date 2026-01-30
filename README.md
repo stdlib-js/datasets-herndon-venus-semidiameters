@@ -43,14 +43,33 @@ Herndon's observations are a classic dataset commonly used in examples demonstra
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/datasets-herndon-venus-semidiameters
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import data from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@deno/mod.js';
+var data = require( '@stdlib/datasets-herndon-venus-semidiameters' );
 ```
 
 #### data()
@@ -73,8 +92,8 @@ var d = data();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import incrgrubbs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-grubbs@deno/mod.js';
-import data from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@deno/mod.js';
+var incrgrubbs = require( '@stdlib/stats-incr-grubbs' );
+var data = require( '@stdlib/datasets-herndon-venus-semidiameters' );
 
 var opts;
 var acc;
@@ -103,7 +122,83 @@ console.log( acc().print() );
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/datasets-herndon-venus-semidiameters-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: herndon-venus-semidiameters [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="notes">
+
+### Notes
+
+-   Data is written to `stdout` as newline-delimited data.
+
+</section>
+
+<!-- /.notes -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ herndon-venus-semidiameters
+-0.30
+-0.44
+1.01
+0.48
+-0.24
+0.06
+0.63
+-0.13
+-1.40
+-0.22
+-0.05
+0.20
+0.18
+0.39
+0.10
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 * * *
 
@@ -145,7 +240,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -157,7 +252,7 @@ For more information on the project, filing bug reports and feature requests, an
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -183,8 +278,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
