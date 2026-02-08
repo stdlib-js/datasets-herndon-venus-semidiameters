@@ -50,7 +50,7 @@ Herndon's observations are a classic dataset commonly used in examples demonstra
 ## Usage
 
 ```javascript
-import data from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@deno/mod.js';
+import data from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@v0.2.3-deno/mod.js';
 ```
 
 #### data()
@@ -74,7 +74,7 @@ var d = data();
 
 ```javascript
 import incrgrubbs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-grubbs@deno/mod.js';
-import data from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@deno/mod.js';
+import data from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-herndon-venus-semidiameters@v0.2.3-deno/mod.js';
 
 var opts;
 var acc;
